@@ -1,45 +1,51 @@
-# Strukturpiloten
+# Strukturpiloten 🚀
 
-Welcome to **Strukturpiloten** - your partner for change, digitalization, and sustainable growth.
+Welcome to **Strukturpiloten** — your partner for change, digitalization, and future-proof IT infrastructures.
 
 ## About Us
 
-Strukturpiloten is a consulting company based in Bückeburg, Germany, specializing in guiding organizations through transformation and growth. We provide practical advice, strategic consultation, and technical expertise to help businesses navigate change and improve their structures and processes.
+We’re a Germany-based consulting and tech company on a mission to make digital transformation *human, scalable, and open*.
+Our work bridges the gap between **modern IT infrastructure** and **organizational change** — combining containerization, automation, and agile culture.
+Because technology only works when people do, too.
 
-## Our Services
+We help organizations clean up legacy systems, modernize their stack, and navigate transformation with clarity, empathy, and solid technical architecture.
 
-### 🎯 Consulting
-We provide organizational and strategic consulting, particularly around digital transformation and change management. Our approach combines practical experience with proven methodologies to deliver sustainable results.
+## What We Do
 
-### 💻 IT Services & Training
-- IT consulting and infrastructure optimization
-- Secure cloud solutions
-- Business resilience through robust IT infrastructure
-- Training and coaching in IT and organizational development
+### 🧭 Consulting & Coaching
+We guide small and medium-sized businesses through digital and organizational change — combining:
+- agile frameworks (Scrum, Kanban, OKR)
+- system-based change management
+- leadership and team coaching
+- and the mindset of continuous improvement.
 
-### 🚀 Coaching
-We offer coaching sessions to help optimize business operations and adapt to new work paradigms, including:
-- Agile methods and frameworks
-- OKR (Objectives and Key Results)
-- Leadership development
-- Team effectiveness
+### 💻 IT Infrastructure & Open Source
+We enable you to implement scalable, secure systems that put **data sovereignty** first.
+Our tech stack is built on **Linux**, **containerization**, and **open-source infrastructure**, running on European servers for maximum transparency and independence.
 
-### 📊 Strukturanalysen (Structure Analysis)
-Free structural analyses for small businesses to:
-- Identify and address inefficiencies
-- Improve margins
-- Streamline organizational processes
+Typical projects include:
+- **Kubernetes** and **Podman (Docker)** clusters for cloud-native environments
+- DevOps pipelines, CI/CD, and automation of deployments
+- Network design and security architecture for scalable systems
+- Private cloud platforms
+- Migration from proprietary tools to open-source alternatives
 
-### 🎨 Brand Development
-We help transform consultative offers into distinctive brands with clarity and direction through visual branding services.
+### 🌍 Community & Knowledge
+We believe in open collaboration and shared progress.
+That’s why our GitHub exists: to publish our open-source tools, share best practices, and document our journey toward a more resilient, ethical, and privacy-respecting IT ecosystem.
 
-## Our Mission
+## Our Philosophy
 
-We support companies—especially small to medium-sized enterprises—with a blend of management consulting, IT solutions, coaching, and organizational development, all aimed at making them more sustainable and fit for the future.
+We love clean architecture.
+We automate the boring stuff.
+We embrace Linux and open source.
+We containerize everything that makes sense.
+
+But above all, we believe that transformation is about people — not just technology.
 
 ---
 
-📍 **Location:** Bückeburg, Germany  
+📍 **Location:** Bückeburg, Germany
 🌐 **Website:** [www.strukturpiloten.de](https://www.strukturpiloten.de)
 
-*Navigating your journey through change and growth*
+**IT is rocket science after all.**

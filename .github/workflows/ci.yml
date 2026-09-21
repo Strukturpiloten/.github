@@ -1,0 +1,23 @@
+---
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Shared policy tests
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Run deterministic tests
+        run: python3 -m unittest discover --start-directory tests --verbose
+      - name: Compile the shared guard
+        run: python3 -m py_compile scripts/lockfile_release_age.py

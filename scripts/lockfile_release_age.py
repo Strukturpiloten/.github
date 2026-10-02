@@ -27,6 +27,9 @@ LOOKUP_WORKERS = 8
 REQUEST_ATTEMPTS = 2
 REQUEST_TIMEOUT_SECONDS = 5
 USER_AGENT = "Strukturpiloten-lockfile-release-age/1"
+FIRST_PARTY_CARGO_CRATES = frozenset(
+    {"compose-lens", "podman-lens", "quadlet-lens", "docker-lens"}
+)
 
 
 class VerificationError(RuntimeError):
@@ -291,7 +294,7 @@ def _lookup_worker(
 ) -> None:
     try:
         released = lookup(dependency)
-        if not isinstance(released, datetime) or released.tzinfo is None:
+        if not isinstance(released, datetime) or released.utcoffset() is None:
             raise VerificationError("registry metadata returned an invalid release timestamp")
         sender.send(("ok", released.astimezone(timezone.utc)))
     except VerificationError as error:
@@ -434,6 +437,17 @@ def verify_dependencies(
             failures.append(f"{dependency.display}: {result}")
             continue
         released = result
+        if released > now:
+            failures.append(
+                f"{dependency.display}: released {released.isoformat()} after verification time {now.isoformat()}"
+            )
+            continue
+        if (
+            dependency.ecosystem == "cargo"
+            and dependency.source == "crates.io"
+            and dependency.name in FIRST_PARTY_CARGO_CRATES
+        ):
+            continue
         if released > cutoff:
             failures.append(
                 f"{dependency.display}: released {released.isoformat()} after cutoff {cutoff.isoformat()}"

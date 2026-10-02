@@ -7,8 +7,13 @@ ComposeLens, PodmanLens, and QuadletLens repositories.
 
 [`scripts/lockfile_release_age.py`](scripts/lockfile_release_age.py) compares a trusted base commit
 with a candidate commit. For changed `Cargo.lock` and `package-lock.json` files, it verifies every
-newly introduced public-registry version is at least 72 hours old. Unknown registries, Git sources,
-missing timestamps, malformed metadata, and network failures fail closed. Unchanged dependencies
+newly introduced public-registry version is at least 72 hours old, with one fixed exception: Cargo
+packages named exactly `compose-lens`, `podman-lens`, `quadlet-lens`, or `docker-lens` from crates.io
+waive the elapsed-age requirement after a successful registry lookup returns a valid timestamp
+with a timezone.
+Future timestamps still fail. Third-party dependencies, including transitives, retain the full delay;
+the exception does not apply to npm packages, other sources, or other names. Unknown registries,
+Git sources, missing timestamps, malformed metadata, and network failures fail closed. Unchanged dependencies
 already present in the base remain outside the check. Registry lookups use at most eight workers,
 two five-second attempts per request, a 90-second overall lookup deadline, and a 1,000-dependency
 input limit so failure remains bounded.

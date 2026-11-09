@@ -50,14 +50,7 @@ keeps incompatible intent visible as structured diagnostics and only produces ou
 chosen loss policy permits it. Generated plans and units remain review material; BoxFerry never
 deploys or executes them.
 
-📖 **Website and documentation:** [boxferry.dev](https://boxferry.dev/)
-
-BoxFerry is supported by format-specific Rust libraries:
-
-- [ComposeLens](https://github.com/Strukturpiloten/compose-lens) for Compose documents
-- [QuadletLens](https://github.com/Strukturpiloten/quadlet-lens) for version-aware Podman Quadlet
-- [PodmanLens](https://github.com/Strukturpiloten/podman-lens) for typed Podman inspection and
-  deployment planning
+📖 **Website and documentation:** [boxferry.dev](https://boxferry.dev/?utm_source=github.com&utm_medium=referral&utm_campaign=boxferry&utm_content=strukturpiloten_profile_boxferry)
 
 ### [Strukturpiloten Containers](https://github.com/Strukturpiloten/containers) 📦
 
@@ -65,15 +58,8 @@ Our public container-image monorepo builds and publishes maintained OCI images w
 validation, multi-architecture builds, dependency-aware releases, signatures, SBOMs, provenance,
 and attestations.
 
-The catalog includes exact upstream Podman compatibility images for Podman 5.4 through 6.1 in
+The catalog includes exact upstream Podman compatibility images for Podman 5.4 through latest in
 rootful and rootless variants, alongside images used by our Nextcloud and TYPO3 work.
-
-### More public work
-
-- [container-setup](https://github.com/Strukturpiloten/container-setup) — a Go tool for generating
-  Compose files, environment files, and project configuration from a declared setup model
-- [Nextcloud](https://github.com/Strukturpiloten/nextcloud) — a documented container solution built
-  with free and open-source components
 
 ## How we work 🌱
 
@@ -93,7 +79,7 @@ Need help planning, delivering, migrating, or stabilizing a container environmen
 hands-on container engineering with **DevOps and IT project management** — from architecture and
 technical implementation to coordinated delivery and operational handover.
 
-🌐 **Website:** [strukturpiloten.de](https://www.strukturpiloten.de/)
+🌐 **Website:** [strukturpiloten.de](https://www.strukturpiloten.de/?utm_source=github.com&utm_medium=referral&utm_campaign=github_profile&utm_content=strukturpiloten_profile_company)
 
 📍 **Bückeburg, Germany**
 
